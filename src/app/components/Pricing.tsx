@@ -79,15 +79,15 @@ export default function Pricing() {
               <h3 className="text-center text-xl font-bold text-foreground">{plan.name}</h3>
               <p className="mt-1 text-center text-sm text-muted-foreground">{plan.tagline}</p>
 
-              <div className="mt-6 flex items-baseline gap-1">
+              <div className="mt-6 flex items-baseline justify-center gap-1">
                 <span className="text-3xl font-extrabold text-foreground sm:text-4xl">{plan.price}</span>
                 <span className="text-sm text-muted-foreground">{plan.priceNote}</span>
               </div>
 
-              <ul className="mt-8 space-y-3">
+              <ul className="mt-8 space-y-3 text-center">
                 {plan.features.map((feat) => (
-                  <li key={feat} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <svg className="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 20 20" fill="currentColor">
+                  <li key={feat} className="flex items-center justify-center gap-3 text-sm text-muted-foreground">
+                    <svg className="h-4 w-4 shrink-0 text-brand" viewBox="0 0 20 20" fill="currentColor">
                       <path
                         fillRule="evenodd"
                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
