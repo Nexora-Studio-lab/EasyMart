@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 const links = [
   { label: "المميزات", href: "#features" },
@@ -16,7 +15,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <a href="#" className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground">
-          <Image src="/logo-pro.png" alt="EasyMart" width={32} height={32} className="h-8 w-8 object-contain" />
+          <img src="/EasyMart/logo-pro.png" alt="EasyMart" width={32} height={32} className="h-8 w-8 object-contain" />
           EasyMart
         </a>
 

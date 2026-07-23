@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const plans = [
   {
     name: "Lite",
@@ -67,8 +65,8 @@ export default function Pricing() {
               {"image" in plan && (
                 <div className="mb-6 flex items-center justify-center">
                   <div className="flex h-28 w-28 items-center justify-center rounded-2xl bg-brand/5 p-4 ring-1 ring-brand/10">
-                    <Image
-                      src={plan.image!}
+                    <img
+                      src={`/EasyMart${plan.image}`}
                       alt={`${plan.name} logo`}
                       width={96}
                       height={96}
